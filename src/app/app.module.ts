@@ -9,6 +9,7 @@ import { MyCustomComponentComponent } from './my-custom-component/my-custom-comp
 import { RoutingComponentComponent } from './routing-component/routing-component.component';
 import { MyDataBindingComponent } from './my-data-binding/my-data-binding.component';
 import { MyCssComponent } from './my-css/my-css.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { MyCssComponent } from './my-css/my-css.component';
     MyCustomComponentComponent,
     RoutingComponentComponent,
     MyDataBindingComponent,
-    MyCssComponent
+    MyCssComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +39,11 @@ import { MyCssComponent } from './my-css/my-css.component';
          {
         path: 'my-css',
         component: MyCssComponent
+            
+        },
+         {
+        path: 'pipes',
+        component: PipesComponent
             
         } 
         
