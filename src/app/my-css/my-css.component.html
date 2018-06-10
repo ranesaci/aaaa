@@ -1,0 +1,17 @@
+<div class="main">
+
+	<h1>Add City Names</h1>
+
+	<div>
+		<input [(ngModel)] = "cityListModel" placeholder="Add Item here!!"> 
+		<button (click)="addCity()" >Add</button>
+	
+	</div>
+	<ul class="ul_list" >
+		<li class="li_list"  *ngFor= "let city of cityList; let idx=index">{{city}}
+		<span (click)="removeCity(idx)" >remove</span>
+		</li>
+	</ul>
+
+
+</div>

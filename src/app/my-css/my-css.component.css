@@ -1,0 +1,40 @@
+.main{
+	width: 500px;
+	text-align: center;
+	border: 5px solid #a1a1a1
+	
+}
+
+h1{
+	margin-top: 0px;
+	background-color: green;
+	text-align: center;
+	color: white
+}
+
+.ul_list{
+	
+	background-color: #a3a3a3;
+	padding: 20px;
+	margin-bottom: 5px;
+	
+}
+.li_list{
+	
+	background-color: black;
+	border: 2px solid #c2c2c2;
+	color: white;
+	font-family: fantasy;
+}
+
+.ul_list span{
+	
+	float: right;
+	cursor: pointer;
+	color: blue;
+	position: relative;
+	
+
+	}
+	
+

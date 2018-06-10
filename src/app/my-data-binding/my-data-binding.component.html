@@ -1,0 +1,17 @@
+<p>
+  get Name from component: {{name}}
+</p>
+
+<br>
+
+get jsonArr object data manually: {{jsonArr[1].name}}
+
+<br>
+Get jsonArr data with ngFor command: <p *ngFor="let i of jsonArr">{{i.name}}>>{{i.city}}</p>
+
+Check data value with ngIf:<p *ngIf= "key=='approve'">Approved visible</p> 
+
+check if else with given data: <p *ngIf="key=='approve' then my_template else second_template">Approved visible for if-else</p>
+
+<ng-template #my_template>Hello!!!I am from my-template</ng-template>	
+<ng-template #second_template>Hello!!!I am from second_template</ng-template>	
