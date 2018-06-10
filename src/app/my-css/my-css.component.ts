@@ -15,6 +15,8 @@ export class MyCssComponent implements OnInit {
         if (this.cityListModel != '') {
             this.cityList.push(this.cityListModel);
             this.cityListModel = "";
+            
+            
         }
     }
 
