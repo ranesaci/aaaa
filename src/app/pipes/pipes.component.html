@@ -1,3 +1,31 @@
-<p>
-  pipes works!
-</p>
+
+<br>
+Normal Name: {{name}}
+<br>
+Name in uppercase : {{name | uppercase}}
+<br>
+Name in lowercase : {{name | lowercase}}
+
+<br>
+date in normal : {{date}}
+<br>
+date in pipe : {{date | date}}
+<br>
+date in  pipe in short  : {{date | date:'shortDate'}}
+<br>
+date in  pipe in full  : {{date | date:'fullDate'}}
+
+<br>
+date in  pipe in short with pipe chain : {{date | date:'shortDate'| uppercase}}
+<br>
+date in  pipe in full  with pipe chain: {{date | date:'fullDate'| uppercase}}
+<br>
+arrData in normal : {{arrData}}
+<br>
+arrData in asc : {{arrData | sort:'asc'}}
+<br>
+arrData in desc : {{arrData| sort:'desc'}}
+
+
+
+

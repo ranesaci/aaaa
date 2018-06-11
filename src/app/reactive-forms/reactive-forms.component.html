@@ -1,0 +1,16 @@
+<div style="border: 10px solid #a1a1a1; text-align: center; width: 400px; padding: 10px;" >
+<form [formGroup] = "employee_form" (ngSubmit)="onSubmit(employee_form.value)">
+
+
+<h1>Employee Details</h1>
+<br>
+Name : <input type="text" name="name" placeholder="Add name here..." formControlName="name">
+<br>
+Age : <input type="text" name="age" placeholder="Add age here..." formControlName="age">
+<br>
+City : <input type="text" name="city" placeholder="Add city here..." formControlName="city">
+<br>
+<input type="submit" placeholder="Submit">
+
+</form>
+</div>

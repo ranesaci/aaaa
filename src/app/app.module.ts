@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {RouterModule} from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import * as $ from 'jquery';
 
 import { AppComponent } from './app.component';
@@ -10,20 +10,28 @@ import { RoutingComponentComponent } from './routing-component/routing-component
 import { MyDataBindingComponent } from './my-data-binding/my-data-binding.component';
 import { MyCssComponent } from './my-css/my-css.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { SortPipe } from './app.sort';
+import { FormsComponent } from './forms/forms.component';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 
 
 @NgModule({
   declarations: [
+    SortPipe,  
     AppComponent,
     MyCustomComponentComponent,
     RoutingComponentComponent,
     MyDataBindingComponent,
     MyCssComponent,
-    PipesComponent
+    PipesComponent,
+    FormsComponent,
+    ReactiveFormsComponent
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     FormsModule,
+   
     RouterModule.forRoot([
     
        {
@@ -45,8 +53,17 @@ import { PipesComponent } from './pipes/pipes.component';
         path: 'pipes',
         component: PipesComponent
             
+        } ,
+        {
+        path: 'forms',
+        component: FormsComponent
+            
+        } ,
+        {
+        path: 'reactive-forms',
+        component: ReactiveFormsComponent
+            
         } 
-        
         ])
       
   ],

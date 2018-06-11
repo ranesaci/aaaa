@@ -1,0 +1,20 @@
+<div style="border: 10px solid #a1a1a1; text-align: center; width: 400px; padding: 10px;" >
+<form #employeeForm = "ngForm" (ngSubmit)="onSubmit(employeeForm.value)">
+
+
+<h1>Employee Details</h1>
+<br>
+Name : <input type="text" name="name" placeholder="Add name here..." ngModel>
+<br>
+Age : <input type="text" name="age" placeholder="Add age here..." ngModel>
+<br>
+City : <input type="text" name="city" placeholder="Add city here..." ngModel>
+<br>
+<input type="submit" placeholder="Submit">
+
+</form>
+</div>
+
+Submitted Values: Name = {{employeeForm.value.name}}
+
+
